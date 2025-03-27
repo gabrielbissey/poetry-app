@@ -1,0 +1,12 @@
+<div class="filter">
+  <label for="filter">{{ label }}</label>
+  <input [formControl]="filter" type="text" id="filter" />
+</div>
+<div class="results">
+  <span
+    *ngFor="let result of results"
+    (click)="selectResult(result)"
+    class="result"
+    >{{ result }}</span
+  >
+</div>

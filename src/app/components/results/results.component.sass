@@ -1,0 +1,33 @@
+$blue: #3761ad
+
+:host
+  height: 100%
+  overflow-y: auto
+
+input
+  width: 100%
+  height: 1rem
+  padding-top: 15px
+  padding-bottom: 15px
+  box-sizing: border-box
+  font-size: 1rem
+
+.filter
+  position: sticky
+  top: 0
+  height: 3rem
+  background: rgba($blue, .7)
+
+.results
+  height: calc(100%  - 3rem)
+  overflow: scroll
+  padding-right: 1rem
+
+.result
+  display: inline-block
+  width: 100%
+  padding: 10px
+
+  &:hover
+    cursor: pointer
+    background: rgba($blue, .3)
